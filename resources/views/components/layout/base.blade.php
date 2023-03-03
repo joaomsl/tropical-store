@@ -17,7 +17,7 @@
     
     <title>{{ $pageTitle }}</title>
 </head>
-<body class="bg-stone-100">
+<body class="bg-stone-100 antialiased text-dark-900">
     {{ $slot }}
     
     @livewireScripts
