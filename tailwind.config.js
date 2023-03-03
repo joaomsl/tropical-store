@@ -39,7 +39,7 @@ const secondaryColorPallet = {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./resources/**/*.{blade.php, js}"],
+  content: ["./resources/**/*.{blade.php, js}", "./config/blade-google-material-design-icons.php"],
   theme: {
     extend: {
       colors: {
@@ -52,5 +52,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }
