@@ -1,0 +1,1 @@
+<img  {{ $attributes }} src="{{ asset('images/brand.svg') }}" alt="Logotipo Tropical Shop">
