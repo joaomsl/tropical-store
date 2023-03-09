@@ -1,6 +1,6 @@
 @props(['imageSrc', 'currentPrice', 'name', 'oldPrice' => null, 'favorited' => false, 'onCart' => false])
 
-<article class="max-w-[120px]">
+<article {{ $attributes }}>
     <div class="relative">
         <div class="bg-primary-300 rounded-lg w-3/4 block aspect-square rotate-[70.94deg] absolute bottom-0 left-0 -z-10"></div>
         <img class="max-w-[150px] max-h-[150px]" src="{{ $imageSrc }}" alt="{{ $name }}">
