@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Protetor solar",
+        "description": "Se proteja utilizando um bom protetor solar",
+        "price_cents": 2580,
+        "discount": 10,
+        "image_path": "images/mock/protetor-solar.webp"
+    },
+    {
+        "name": "Água mineral",
+        "description": "É importante de manter hidratado, mas também é necessário ter certeza da qualidade que bebe",
+        "price_cents": 1299,
+        "discount": 5,
+        "image_path": "images/mock/galao-de-agua.webp"
+    },
+    {
+        "name": "Chinelo Havainas",
+        "description": "Andar descalço pode ser perigoso, por isso sempre tenha algo em seus pés",
+        "price_cents": 2670,
+        "discount": 20,
+        "image_path": "images/mock/chinelo-havainas.webp"
+    }
+]
