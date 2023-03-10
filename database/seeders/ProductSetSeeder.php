@@ -40,6 +40,7 @@ class ProductSetSeeder extends Seeder
         ProductInSet::query()->create([
             'product_id' => $product->id,
             'product_set_id' => $set->id,
+            'product_count' => mt_rand(1, 5)
         ]);
     }
 }
