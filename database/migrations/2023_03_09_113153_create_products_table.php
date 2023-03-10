@@ -17,6 +17,7 @@ return new class extends Migration
             $table->unsignedBigInteger('price_cents');
             $table->unsignedTinyInteger('discount')->nullable();
             $table->string('image_path');
+            $table->unsignedBigInteger('sales_amount')->default(0);
             $table->timestamps();
         });
     }
