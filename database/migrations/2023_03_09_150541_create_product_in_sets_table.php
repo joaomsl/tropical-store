@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('product_id')->references('id')->on('products')->cascadeOnDelete();
             $table->foreignId('product_set_id')->references('id')->on('product_sets')->cascadeOnDelete();
+            $table->unsignedInteger('product_count')->default(1);
             $table->timestamps();
         });
     }
