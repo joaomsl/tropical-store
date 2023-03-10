@@ -28,7 +28,7 @@ class ProductSet extends Model implements IProduct
     
     protected function getDiscountPercent(): int 
     {
-        return $this->discount;
+        return $this->discount ?? 0;
     }
     protected function getBasePriceCentsForDiscount(): int 
     {
