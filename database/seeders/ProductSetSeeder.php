@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Models\Product;
-use App\Models\ProductInSet;
-use App\Models\ProductSet;
+use App\Models\Product\Product;
+use App\Models\Product\ProductInSet;
+use App\Models\Product\ProductSet;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
@@ -22,6 +22,7 @@ class ProductSetSeeder extends Seeder
         $sets = [];
         foreach($productSetList as $productSetData) {
             $productSetData['slug'] = Str::slug($productSetData['name']);
+            $productSetData['discount'] = mt_rand(0, 50);
             $sets[] = ProductSet::query()->create($productSetData);
         }
 
@@ -39,7 +40,6 @@ class ProductSetSeeder extends Seeder
         ProductInSet::query()->create([
             'product_id' => $product->id,
             'product_set_id' => $set->id,
-            'discount' => mt_rand(0, 50)
         ]);
     }
 }
