@@ -4,32 +4,16 @@
             <h1 class="font-light text-6xl">Tropical</h1>
             <p class="mt-2">Tudo o que você precisa para aproveitar a sua viagem:</p>
 
-            <div class="mt-4 flex gap-8 overflow-y-auto scroll-pl-4">
-                @for($i = 0; $i < 6; $i++)
-                    <x-card.product
-                        class="min-w-[120px]"
-                        :image-src="asset('images/protetor-solar.webp')"
-                        current-price="R$ 25,80" 
-                        old-price="R$ 30,20" 
-                        name="Protetor Solar" 
-                    />
-                @endfor
-
-                <button class="min-w-[120px] flex justify-center items-center flex-col">
-                    <div class="bg-primary-300 rounded-lg shadow-lg text-secondary-900 px-5 h-1/2 grid content-center">
-                        <span class="font-medium">Ver tudo</span>
-                        <x-gmdi-chevron-right-r class="mx-auto w-8" />
-                    </div>
-                </button>
-            </div>
+            @livewire('best-products')
         </section>
 
         <section class="mt-8">
             <h1 class="text-2xl">Para você que gosta de...</h1>
             <div class="mt-4 grid grid-cols-3 gap-2">
-                @for($i = 0; $i < 5; $i++)
-                    <x-card.hobby :thumb-src="asset('images/beach.jpg')" title="Praia"/>
-                @endfor
+                @foreach($productSets as $productSet)
+                    <x-card.hobby :thumb-src="asset($productSet->action_banner_path)" :title="$productSet->action_name" />
+                @endforeach
+
                 <article class="bg-primary-300 rounded-lg shadow-lg flex justify-center items-center flex-col text-secondary-900">
                     <h1 class="font-medium">E muito mais</h1>
                     <x-gmdi-chevron-right-r class="w-8" />
