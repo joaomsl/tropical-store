@@ -2,31 +2,31 @@
     {
         "name": "Praia",
         "description": "Este conjunto foi feito pensando em você que gosta de praia:",
-        "action_banner_path": "images/mock/banners/praia.webp",
+        "action_banner_path": "images/mock/banner/praia.webp",
         "action_name": "Praia"
     },
     {
         "name": "Acampar",
         "description": "Este conjunto foi feito pensando em você que gosta de acampar:",
-        "action_banner_path": "images/mock/banners/acampar.webp",
+        "action_banner_path": "images/mock/banner/acampar.webp",
         "action_name": "Acampar"
     },
     {
         "name": "Surfar",
         "description": "Este conjunto foi feito pensando em você que gosta de surfar:",
-        "action_banner_path": "images/mock/banners/surfar.webp",
+        "action_banner_path": "images/mock/banner/surfar.webp",
         "action_name": "Surfar"
     },
     {
         "name": "Pescar",
         "description": "Este conjunto foi feito pensando em você que gosta de Pescar:",
-        "action_banner_path": "images/mock/banners/pescar.webp",
+        "action_banner_path": "images/mock/banner/pescar.webp",
         "action_name": "Pescar"
     },
     {
         "name": "Caminhar",
         "description": "Este conjunto foi feito pensando em você que gosta de Caminhar:",
-        "action_banner_path": "images/mock/banners/caminhar.webp",
+        "action_banner_path": "images/mock/banner/caminhar.webp",
         "action_name": "Caminhar"
     }
 ]
