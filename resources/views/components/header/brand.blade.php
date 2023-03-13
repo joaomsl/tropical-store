@@ -1,3 +1,3 @@
-<a href="{{ route('home') }}" title="Início">
+<a href="{{ route('welcome') }}" title="Início">
     <x-brand />
 </a>
